@@ -1,0 +1,6 @@
+  <%=@contact.first_name%>
+  <%=@contact.last_name%>
+  <%=@contact.phone%>
+  <%=@contact.email%>
+
+  <%= link_to "Delete", "/contacts/#{@contact.id}", method: :delete, class: "btn"%>
