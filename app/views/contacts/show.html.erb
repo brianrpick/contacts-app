@@ -1,6 +1,8 @@
   <%=@contact.first_name%>
+  <%=@contact.middle_name%>
   <%=@contact.last_name%>
-  <%=@contact.phone%>
+  <%=@contact.add_japan%><%=@contact.phone%>
   <%=@contact.email%>
-
+  <%=@contact.bio%>
+  <p>Created: <%=@contact.pretty_time%><p>
   <%= link_to "Delete", "/contacts/#{@contact.id}", method: :delete, class: "btn"%>

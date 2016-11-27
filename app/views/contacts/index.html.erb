@@ -1,10 +1,12 @@
-
+These are all the contacts you have added!
 <%@contact.each do |contact| %>
 
   <h2>Name: <%=contact.first_name%>
   <%=contact.last_name%></h2>
+  <%=contact.full_name%>
   
-  <div class="well"><h3>Phone#: <%=contact.phone%></h3>
+  <div class="well"><h3>Phone#: <%=contact.add_japan%><%=contact.phone%></h3>
   <h4>Email: <%=contact.email%></h4></div>
+  Created: <%=contact.pretty_time%>
 
 <%end%>
